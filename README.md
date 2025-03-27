@@ -1,10 +1,10 @@
-# API Crypto Wallet
+# API Quote
 
-Uma API simples para gerenciamento de carteiras digitais de criptomoedas.
+Uma simples API de citações
 
 ## 🚀 Sobre o Projeto
 
-Este projeto é uma aplicação full-stack que permite gerenciar carteiras digitais de criptomoedas. O sistema é composto por um backend em Python (FastAPI) e um frontend em React/Vite.
+Este projeto é uma aplicação full-stack que permite visualizar citações aleatórias. O sistema é composto por um backend em Python (FastAPI) e um frontend em React/Vite.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -30,8 +30,7 @@ Este projeto é uma aplicação full-stack que permite gerenciar carteiras digit
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/api-crypto.git
-cd api-crypto
+git clone https://github.com/Pxxx010/Api-quote
 ```
 
 2. Instale as dependências do backend:
