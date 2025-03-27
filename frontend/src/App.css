@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.quote-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-5px);
+}
+
+.quote-content {
+  margin-bottom: 20px;
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  transition: opacity 0.5s ease;
+}
+
+.quote-info {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 0.9rem;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.quote-author, .quote-category {
+  transition: opacity 0.5s ease;
+}
+
+.new-quote-button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.new-quote-button:hover:not(:disabled) {
+  background: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.new-quote-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.new-quote-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .quote-card {
+    padding: 20px;
+  }
+  
+  .quote-text {
+    font-size: 1.2rem;
+  }
+}
