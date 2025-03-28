@@ -12,7 +12,7 @@ function App() {
   const fetchQuote = async () => {
     try {
       setLoading(true)
-      const response = await fetch('http://127.0.0.1:8000/quote')
+      const response = await fetch('http://20.206.150.78:8080/quote')
       if (!response.ok) {
         throw new Error('Erro ao buscar citação')
       }
